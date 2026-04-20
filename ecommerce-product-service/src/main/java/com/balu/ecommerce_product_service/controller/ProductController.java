@@ -63,7 +63,7 @@ public class ProductController {
 
     // This endpoint is called by Order Service internally
     // PATCH /api/products/{id}/deduct-stock?quantity=2
-    @PatchMapping("/{id}/deduct-stock")
+    @PutMapping("/{id}/deduct-stock")
     public ResponseEntity<String> deductStock(
             @PathVariable Long id,
             @RequestParam int quantity) {
